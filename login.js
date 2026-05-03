@@ -72,7 +72,7 @@ async function LoginRoutes(fastify, opts) {
     }
   });
 
-  fastify.post('/signin', async (request, reply) => {
+  fastify.post('/register', async (request, reply) => {
     const result = signinSchema.safeParse(request.body);
 
     if (!result.success) {
