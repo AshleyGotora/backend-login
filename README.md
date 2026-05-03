@@ -22,8 +22,9 @@ A RESTful API built with **Fastify** and **MySQL**, featuring **JWT authenticati
 ```
 ├── app.js        # Server setup, plugins and DB connection
 ├── login.js      # Authentication routes (login, register, me)
+├── .gitignore    # Files ignored by git
 ├── .env          # Environment variables (not committed)
-└── package.json
+└── README.md
 ```
 
 ---
@@ -85,7 +86,7 @@ Server will be running at: `http://localhost:3000`
 | Method | Route | Description | Auth Required |
 |--------|-------|-------------|---------------|
 | POST | `/login` | Login with email and password | ❌ |
-| POST | `/signin` | Register a new user | ❌ |
+| POST | `/register` | Register a new user | ❌ |
 | GET | `/me` | Get logged-in user data | ✅ |
 
 ---
